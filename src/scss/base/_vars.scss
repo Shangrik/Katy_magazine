@@ -1,0 +1,20 @@
+
+:root {
+  
+  --color-black: #000;
+  --color-white: #fff;
+  --color-eastbay: #484283;
+  --color-accent: #F14F4F;
+
+  // отступы
+  --verysmall-gap: 10px;
+  --small-gap: 20px;
+  --medium-gap: 40px;
+  --large-gap: 60px;
+
+  // шрифты
+  --font-family: "Intro", sans-serif;
+  --middle-high-font: 700 30px / 140% var(--font-family); 
+  --small-font: 400 14px / 140% var(--font-family);
+
+}
