@@ -20,6 +20,7 @@
         padding: 0 20%;
         display: flex;
         justify-content:space-evenly;
+        margin-bottom: var(--medium-gap);
     }
 
     &__link {
@@ -38,5 +39,42 @@
         }
     }
 
+    &__main-link {
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        background: linear-gradient(180deg, #61B959 99.99%, rgba(196, 196, 196, 0) 100%);
+        color: #fff;
+        border-radius: 5px;
+        text-align: center;
+        font: var(--small-font);
+        font-size: 24px;
+        margin-bottom: var(--medium-gap);
+    }
    
 }
+
+[data-action="stop"] {
+    display: none;
+}
+
+.pulse[data-animation="pulse"] {
+    animation: pulse 1s linear infinite;
+}
+  
+    @keyframes pulse {
+        0% {
+        transform: scale3d(1, 1, 1);
+        }
+        50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+        }
+        100% {
+        transform: scale3d(1, 1, 1);    
+        }
+       
+    }
+    
