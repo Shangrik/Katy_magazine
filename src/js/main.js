@@ -27,6 +27,21 @@ var slider = tns({
   controls: false,
   mouseDrag: true,
   nav: false,
-  speed: 200
+  speed: 300,
+  preventScrollOnTouch: 'auto',
+  responsive: {
+    320: {
+      items: 1
+    },
+
+    600: {
+      // edgePadding: 20,
+      items: 2
+    },
+   
+    900: {
+      items: 3
+    }
+  }
 });
 

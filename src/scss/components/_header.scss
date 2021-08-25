@@ -4,6 +4,24 @@
     background-image: url('./../img/header_bg.jpg');
     padding-top: 133px;
 
+    @media (max-width: 1199px) {
+        min-height: 400px;
+        padding-top: 50px;
+    }
+
+    @media (max-width: 899px) {
+        min-height: 200px;
+        padding-top: 20px;
+        background-position: center;
+    }
+
+    @media (max-width: 599px) {
+        min-height: 170px;
+        padding-top: 20px;
+        background-position: center;
+    }
+    
+
     &__title {
         padding: 50px 30px;
         width: 620px;
@@ -17,5 +35,22 @@
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: #fff;
         cursor: pointer;
+
+        @media (max-width: 899px) {
+           width: 400px;
+           font-size: 28px;
+           -webkit-text-stroke-width: .9px;
+           -webkit-text-stroke-color: #fff;
+           padding: 40px 40px;
+           line-height: 1;
+        }
+
+        @media (max-width: 599px) {
+            width: 80%;
+            font-size: 20px;
+            line-height: 1;
+            padding: 30px 5px;
+        
+        }
     }
 }
