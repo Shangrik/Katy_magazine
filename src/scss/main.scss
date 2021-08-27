@@ -1,12 +1,21 @@
 // @import 'vars'; если используете scss-переменные - подключите сюда vars, но удалите root из _vars.scss
 // blocks
-// @import "./blocks/nav";
+@import "./blocks/nav";
+@import "./blocks/logo";
+@import "./blocks/link-anim";
+@import "./blocks/button";
 
 
 
 
 
 
-//sections
+//sections for promo
 @import "./components/header";
 @import "./components/content";
+
+
+// sections from main site
+@import "./components/main-header";
+@import "./components/main-footer";
+@import "./components/main-content";

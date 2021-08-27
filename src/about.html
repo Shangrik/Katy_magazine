@@ -6,24 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
-  <meta name="description" content="Промо страница магазина одежды Fashion Katy">
+  <meta name="description" content="Cтраница магазина одежды Fashion Keti">
   <meta name="keywords" content="Одежда, купить, хорошее качество, недорого, Clothes, buy, quiality">
-  <title>Fashion Katy</title>
+  <title>Fashion Katy - About us</title>
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
-  <div class="site-container">
+<body class="main-body">
+  <div class="site-container main-sitecontainer">
+    @include("partials/main/main_header.html")
     <main class="main">
-      
+      @include("partials/about/main__about.html")
     </main>
-    <!-- @include('partials/footer.html') -->
+    @include('partials/main/main__footer.html')
 
   </div>
   <script src="js/vendor.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main1.js"></script>
 </body>
 
 </html>

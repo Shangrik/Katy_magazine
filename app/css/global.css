@@ -45,7 +45,8 @@
 
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  height: 100vh; }
 
 *,
 *::before,
@@ -55,7 +56,14 @@ html {
 body {
   margin: 0;
   font-family: "Arial", sans-serif;
-  background-color: #E5E1E1; }
+  background-color: #E5E1E1;
+  height: 100vh; }
+
+.footer {
+  margin-top: auto; }
+
+.main-body {
+  background-color: #fff; }
 
 h1,
 h2,
@@ -119,6 +127,11 @@ a {
   @media (max-width: 599px) {
     .container {
       max-width: 320px; } }
+
+.wide-container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1600px; }
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none; }

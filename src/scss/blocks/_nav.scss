@@ -1,0 +1,45 @@
+.nav {
+    
+    &__list {
+        display: flex;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    &__link {
+        display: block;
+        color: #E4B688;
+        position: relative;
+        font: var(--smallfont);
+        font-size: 20px;
+        transition: .5s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top:110%;
+            width: 0%;
+            left: 0%;
+            height: 2px;
+            background-color: burlywood;
+            transition: .6s ease-in-out;
+        }
+
+        
+        
+
+        &:hover::before {
+            width: 100%;
+            transition: .6s ease-in-out;
+            
+        }
+        
+    }
+}

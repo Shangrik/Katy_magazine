@@ -1,8 +1,9 @@
 //
 .header {
     min-height: 530px;
-    background-image: url('./../img/header_bg.jpg');
+    background-image: url('./../img/coats.jpeg');
     padding-top: 133px;
+    background-size: contain;
 
     @media (max-width: 1199px) {
         min-height: 400px;
@@ -18,20 +19,19 @@
     @media (max-width: 599px) {
         min-height: 170px;
         padding-top: 20px;
-        background-position: center;
     }
     
 
     &__title {
         padding: 50px 30px;
         width: 620px;
-        background-color: rgba(192, 168, 151, 0.45);
+        background-color: rgba(214, 193, 178, 0.45);
         text-align: center;
         font-size: 50px;
         line-height: 70px;
         color: #A58E82;
         font-family: var(--font-family);
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(.5px);
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: #fff;
         cursor: pointer;

@@ -1,0 +1,32 @@
+.link {
+    // display: block;
+    color: #E4B688;
+    position: relative;
+    font-family: var(--font-family);
+    transition: .5s ease-in-out;
+    text-shadow: 0 0 3px rgba(236, 127, 127, 0.4);
+    &:hover {
+        opacity: .7;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top:100%;
+        width: 0%;
+        left: 0%;
+        height: 2px;
+        background-color: burlywood;
+        transition: .6s ease-in-out;
+    }
+
+    
+    
+
+    &:hover::before {
+        width: 100%;
+        transition: .6s ease-in-out;
+        
+    }
+}
